@@ -6,10 +6,7 @@ The project is aimed at reducing barriers to entry to create mixed reality appli
 
 MixedRealityToolkit-Unity uses code from the base [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit) and makes it easier to consume in [Unity](https://unity3d.com/).
 
-[![Mixed Reality Academy](External/ReadMeImages/MixedRealityStack-Apps.png)](https://developer.microsoft.com/en-us/windows/mixed-reality/academy)
-[![View the Mixed Reality Companion Kit](External/ReadMeImages/MixedRealityStack-MRTK-Unity.png)](https://github.com/Microsoft/MixedRealityCompanionKit)
-[![Mixed Reality Toolkit GitHub Repo](External/ReadMeImages/MixedRealityStack-MRTK.png)](https://github.com/Microsoft/MixedRealityToolkit)
-[![Read the Mixed Reality Developer Guides](External/ReadMeImages/MixedRealityStack-UWP.png)](https://developer.microsoft.com/en-us/windows/mixed-reality)
+<img src="External/ReadMeImages/MixedRealityStack-Apps.png" width="600"><img src="External/ReadMeImages/MixedRealityStack-MRTK-Unity.png" width="600"><img src="External/ReadMeImages/MixedRealityStack-MRTK.png" width="600"><img src="External/ReadMeImages/MixedRealityStack-UWP.png" width="600">
 
 > Learn more about [Windows Mixed Reality](https://www.microsoft.com/en-gb/windows/windows-mixed-reality) here.
 
@@ -19,11 +16,11 @@ _Note: The latest release should work for both HoloLens and Windows Mixed Realit
 [mrtk-version-badge]:            https://img.shields.io/github/tag/microsoft/MixedRealityToolkit-unity.svg?label=Latest%20Master%20Branch%20Release&colorB=9acd32
 [![Github Release][mrtk-version-badge]][github-rel]
 
-[unity-download]:                 https://unity3d.com/unity/whats-new/unity-2017.2.1
-[unity-version-badge]:            https://img.shields.io/badge/Current%20Unity%20Editor%20Version-2017.2.1f1-green.svg
+[unity-download]:                 https://unity3d.com/unity/qa/patch-releases/2017.2.1p2
+[unity-version-badge]:            https://img.shields.io/badge/Current%20Unity%20Editor%20Version-2017.2.1p2-green.svg
 [![Github Release][unity-version-badge]][unity-download]
 
-> Check out the MRTK [Roadmap](/Roadmap.md) for Unity.
+> Check out the MRTK-Unity [Roadmap](/Roadmap.md).
 >
 > Check out the updates from the [Fall Creators update](/FallCreatorsUpdate.md) for Windows Mixed Reality.
 >
@@ -54,18 +51,28 @@ To get up and going as quickly as possible, here are some guides to help you get
 |:--- | :--- | :--- |
 | Please go over the [Getting started guide](GettingStarted.md) to learn more about getting off the ground quickly. | Please go over the [Contributing guidelines](CONTRIBUTING.md) to learn more about the process and thinking. | Check out the recent updates for Windows Mixed reality in the [Fall Creators update](/FallCreatorsUpdate.md) |
 
-# Examples and QuickStart scenes
-The MRTK includes many great samples and starter scenes to demonstrate the uses of the MRTK API, these include:
+# Examples - Input
+|[![Input manager tests](External/ReadMeImages/MRTK_InputManagerTest.jpg)](/Assets/HoloToolkit-Examples) [Input manager tests](/Assets/HoloToolkit-Examples) | [![Motion Controller tests](External/ReadMeImages/MRTK_MotionControllerTest.jpg)](/Assets/HoloToolkit-Examples) [Motion Controller tests](/Assets/HoloToolkit-Examples) | [![Grab Mechanics](External/ReadMeImages/MRTK_GrabMechanics.jpg)](/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics) [Grab Mechanics](/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics) | [![Two Hand Manipulation](External/ReadMeImages/MRTK_TwoHandManipulation.jpg)](/Assets/HoloToolkit-Examples/Input/Readme/README_TwoHandManipulationTest.md) [Two Hand Manipulation](/Assets/HoloToolkit-Examples/Input/Readme/README_TwoHandManipulationTest.md) |
+|:--- | :--- | :--- | :--- |
+| Input and cursor visualization examples for gaze and motion controller pointers | Demonstrates how to access motion controller input events and data |   Examples of direct manipulation with motion controllers | Script for manipulating objects with two hands |
 
-| [![Motion Controller tests](External/ReadMeImages/MRTK_MotionControllerTest.jpg)](/Assets/HoloToolkit-Examples) [Motion Controller tests](/Assets/HoloToolkit-Examples) | [![Input manager tests](External/ReadMeImages/MRTK_InputManagerTest.jpg)](/Assets/HoloToolkit-Examples) [Input manager tests](/Assets/HoloToolkit-Examples) | [![Grab Mechanics demo](External/ReadMeImages/MRTK_GrabMechanics.jpg)](/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics) [Grab Mechanics demo](/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics) |
-|:--- | :--- | :--- |
-| Motion controller test scene demonstrating controller input events | Several gaze interaction demos such as popups, buttons and more |   Examples of direct manipulation with Motion Controllers (IHMD Only) |
-| [![Interactable Objects](External/ReadMeImages/MRTK_InteractableObject.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) [Interactable Objects](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [![Object Collection](External/ReadMeImages/MRTK_ObjectCollection.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) [Object Collection](/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) | [![App Bar and Bounding Box](External/ReadMeImages/MRTK_AppBar_BoundingBox.jpg)](/Assets/HoloToolkit-Examples/UX/Scenes) App Bar and Bounding Box |
-| Example of modular and extensible interactable objects with visual states, including Holographic button  | Object collection helps you lay out an array of objects in a three-dimensional shape | **[Coming Soon]** Standard UI for move/rotate/scale 3D objects |
-| [![Keyboard input sample](External/ReadMeImages/MRTK_Keyboard.jpg)](/Assets/HoloToolkit-Examples) [Keyboard input sample](/Assets/HoloToolkit-Examples) | [![Interactive button demos](External/ReadMeImages/MRTK_InteractiveButtons.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractiveButtonComponents.md) [Interactive button demos](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractiveButtonComponents.md) | [![Scene occulsion demo](External/ReadMeImages/MRTK_OcclusionExample.jpg)](/Assets/HoloToolkit-Examples) [Scene occlusion demo](/Assets/HoloToolkit-Examples) |
-| A sample virtual keyboard, similar to system keyboard in Windows Mixed Reality shell  | Example UI buttons and controls for use in Mixed Reality | Scene construction demo on how to make occluded windows |
+# Examples - UI controls and building blocks
+|  [![Bounding Box and App Bar](External/ReadMeImages/MRTK_AppBar_BoundingBox.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) [Bounding Box and App Bar](/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [![Interactable Objects](External/ReadMeImages/MRTK_InteractableObject_HolographicButton.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) [Interactable Objects](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [![Object Collection](External/ReadMeImages/MRTK_ObjectCollection.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) [Object Collection](/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) |[![Keyboard](External/ReadMeImages/MRTK_Keyboard.jpg)](/Assets/HoloToolkit-Examples) [Keyboard](/Assets/HoloToolkit-Examples) |
+|:--- | :--- | :--- | :--- |
+| Standard UI for manipulating objects in 3D space | Modular script for making objects interactable with visual states, including Holographic button  | Script for lay out an array of objects in a three-dimensional shape | System style keyboard prefab for Unity projects |  
+| ![Dialog and Progress](External/ReadMeImages/MRTK_DialogProgress.jpg) [Dialog](/Assets/HoloToolkit-Examples/UX/Readme/README_DialogsExample.md) / [Progress](/Assets/HoloToolkit-Examples/UX/Readme/README_ProgressExample.md) | [![Solver system](External/ReadMeImages/MRTK_SolverSystem.jpg)](/Assets/HoloToolkit-Examples/Utilities/Readme/README_SolverSystem.md) [Solver system](/Assets/HoloToolkit-Examples/Utilities/Readme/README_SolverSystem.md) | [![Interactive button demos](External/ReadMeImages/MRTK_InteractiveButtons.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractiveButtonComponents.md) [Interactive button demos](/Assets/HoloToolkit-Examples/UX/Readme/README_InteractiveButtonComponents.md) | [![ToolTip & Label](External/ReadMeImages/MRTK_Tooltip.jpg)](/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) [ToolTip & Label](/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) |
+| Standard UI for notification, approval, or additional information from the user / Data loading indicator | Scripts for various behavious such as tag-along, billboarding, body-lock, constant view size and surface magnetism  | UWP style UI controls including radio, toggle and checkboxes | Annotation UI with flexible anchor/pivot system which can be used for labeling motion controllers and object. | 
+
+# Examples - Surface reconstruction
+|[![Spatial Mapping](External/ReadMeImages/MRTK_SpatialMapping.jpg)](/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialMappingExample.unity) [Spatial Mapping](/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialMappingExample.unity) | [![Spatial Processing](External/ReadMeImages/MRTK_SpatialProcessing.jpg)](/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessing.unity) [Spatial Processing](/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessing.unity) | [![Spatial Understanding](External/ReadMeImages/MRTK_SpatialUnderstanding.jpg)](/Assets/HoloToolkit-Examples/SpatialUnderstanding/Scenes/SpatialUnderstandingExample.unity) [Spatial Understanding](/Assets/HoloToolkit-Examples/SpatialUnderstanding/Scenes/SpatialUnderstandingExample.unity)  | [![Surface Magnetism](External/ReadMeImages/MRTK_SurfaceMagnetism.jpg)](/Assets/HoloToolkit-Examples/SpatialMapping/SpatialProcessingSurfaceMagnetism.md) [Surface Magnetism](/Assets/HoloToolkit-Examples/SpatialMapping/SpatialProcessingSurfaceMagnetism.md) | 
+|:--- | :--- | :--- | :--- |
+| Example of visualizing and accessing spatial mapping data. | Example of processing the raw spatial mapping data, finding and creating planes based on spatial mapping meshes. | Examples of the room scanning and accessing identified surfaces such as walls, floors, ceilings and platforms. | Example of making an object smoothly align with physical surfaces using SolverSurfaceMagnetism |
+
 
 Check out the [Examples](/Assets/HoloToolkit-Examples) folder for more details.
+
+Check out the article ["Open-Source Building Blocks for Windows Mixed Reality Experiences"](https://medium.com/@dongyoonpark/open-source-building-blocks-for-windows-mixed-reality-experiences-hololens-mixedrealitytoolkit-28a0a16ebb61)
+[![MRTK Building Blocks](/External/ReadMeImages/MRTK_BuildingBlocks.png)](https://medium.com/@dongyoonpark/open-source-building-blocks-for-windows-mixed-reality-experiences-hololens-mixedrealitytoolkit-28a0a16ebb61)
 
 **External\How To** docs folder is meant to help everyone with migrating forward or any simple doubts they might have about the process.
 Please feel free to grow all these sections. We can't wait to see your additions!
